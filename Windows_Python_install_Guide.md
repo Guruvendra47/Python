@@ -1,6 +1,6 @@
 # Windows Python Installation Guide (Step-by-Step)
 
-This guide walks you through installing **Python 3** on **Windows**, verifying your setup, and creating a virtual environment — with images you can follow.
+This guide walks you through installing **Python 3** on **Windows**, verifying your setup, and creating a virtual environment.
 
 > If you're on Windows 10/11, these steps work great. Prefer the official installer from python.org for full control and latest versions.
 
@@ -17,7 +17,6 @@ This guide walks you through installing **Python 3** on **Windows**, verifying y
 
 ## 1) Download Python for Windows
 
-![Download Python](/mnt/data/python-install-guide/images/step-01-download.png)
 
 - Open: **https://www.python.org/downloads/windows/**
 - Click **Download Python 3.x** (Windows installer, 64‑bit).
@@ -29,7 +28,6 @@ This guide walks you through installing **Python 3** on **Windows**, verifying y
 
 ## 2) Run the Installer (Very Important: PATH)
 
-![Run Installer](/mnt/data/python-install-guide/images/step-02-run-installer.png)
 
 1. Double‑click the downloaded **.exe**.
 2. **Check** the box **“Add Python to PATH”** at the bottom.
@@ -42,7 +40,6 @@ This guide walks you through installing **Python 3** on **Windows**, verifying y
 
 ## 3) (Optional) Custom Installation Choices
 
-![Customize Installation](/mnt/data/python-install-guide/images/step-03-customize-optional.png)
 
 - **Install for all users** (requires Admin) installs to `C:\Program Files\Python3x`.
 - **pip**: Python’s package manager — **keep this checked**.
@@ -53,7 +50,6 @@ This guide walks you through installing **Python 3** on **Windows**, verifying y
 
 ## 4) Verify the Installation
 
-![Verify in Terminal](/mnt/data/python-install-guide/images/step-04-verify-cmd.png)
 
 Open **Command Prompt** or **PowerShell** and run:
 
@@ -80,7 +76,6 @@ py -3 --version
 
 ## 5) Upgrade pip and Create a Virtual Environment
 
-![Upgrade pip & venv](/mnt/data/python-install-guide/images/step-05-upgrade-pip-venv.png)
 
 ```bat
 python -m pip install --upgrade pip
@@ -126,7 +121,6 @@ deactivate
 
 ## 7) Troubleshooting (Most Common)
 
-![Troubleshooting](/mnt/data/python-install-guide/images/step-06-troubleshoot.png)
 
 - **`'python' is not recognized`**  
   Re‑run the installer and **check 'Add Python to PATH'**. Or manually add:
@@ -161,12 +155,9 @@ PY
 
 Expected output: `Hello from Python!`
 
----
-
-### Notes
-- These screenshots are simplified instructional images to highlight the exact buttons and commands to use on Windows.
-- For the absolute latest Python release, always check: https://www.python.org/downloads/windows/
 
 ---
 
 **You're all set!** 🎉
+
+
