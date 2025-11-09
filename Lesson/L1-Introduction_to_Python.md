@@ -259,14 +259,4 @@ plt.show()
 
 ---
 
-## Attribution
-
-This Markdown project was written from scratch, inspired by your presentation “Introduction to Python.”  
-It’s designed to be **realistic, non-copied**, and suitable for showcasing on GitHub as a learning or teaching portfolio project.
-
----
-
-### ✅ How to Use on GitHub
-1. Create a new repository (e.g., `Introduction-to-Python`).
-2. Add this file as `README.md`.
-3. Push to GitHub — your presentation is now a **professional project**.
+## Next L2
