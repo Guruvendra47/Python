@@ -1,8 +1,4 @@
 # Python Fundamentals — Assignment 1
-**Repository / File:** `Python_Fundamentals_Assignment_1.md`  
-**Contents:** Detailed, GitHub-ready answers and runnable code for each question. Format: **Question → Explanation → Answer/Code → Sample Output**.
-
----
 
 ## Table of Contents
 - [Q1 — Basic: Variable Assignment](#q1---basic-variable-assignment)
@@ -476,17 +472,3 @@ bad + 3 -> Error: Operands must be numeric
 
 ---
 
-## How to use these files on GitHub
-1. Create a repository called `Python_Fundamentals_Assignment_1` (or upload this single Markdown file as `README.md`).  
-2. If you prefer separate `.py` files, copy each code block into its own file (filenames suggested in the headers).  
-3. Add `requirements.txt` if you add external test frameworks (not required here).
-
----
-
-## Notes & Best Practices (mini-tutorial recap)
-- Prefer explicit conversions and handle exceptions when parsing user input.  
-- Avoid `eval()` on untrusted inputs — implement safe parsers or use `ast` for structured parsing.  
-- Use `keyword.iskeyword()` to protect identifier names.  
-- Keep functions small and testable; write unit tests for validators and parsers.  
-
----
