@@ -1,6 +1,4 @@
-# Conditional Statements in Python — Practical Guide for GitHub
-
-A concise, realistic, and original rewrite of your slide content. This file is formatted to match the style used in `L2-Everything_About_Operators_And_Data_Type.md`: clear summary, clickable Table of Contents, practical examples, and business-focused use cases. Save this as `README.md` in a repo called `conditional-statements-python`.
+# Conditional Statements in Python
 
 ---
 
@@ -180,24 +178,4 @@ def valid_row(row):
 
 ---
 
-## Quick Start (Repo Structure)
-
-```
-conditional-statements-python/
-├── solutions/           # practice problem solutions as .py files
-├── scripts/             # runnable demo scripts
-├── tests/               # unit tests (pytest)
-├── README.md            # this file
-└── requirements.txt
-```
-
-Example `requirements.txt`
-```
-pytest
-```
-
----
-
-## Attribution
-
-This README was rewritten and expanded from your slides into an original, GitHub-ready guide matching the style used in your L2 project. Save it as `README.md` in a repo called `conditional-statements-python`.
+## Next Lesson - 4
