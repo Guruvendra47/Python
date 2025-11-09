@@ -256,15 +256,4 @@ print(clean)  # {'sales_amount': 1500.0, 'order_date': datetime.date(2024, 12, 3
 
 ---
 
-## Quick Start
-
-1. Create a new GitHub repo.
-2. Add this file as `README.md` in the root.
-3. Optionally, add a folder `examples/` and paste the code snippets into runnable `.py` files.
-4. Commit and push. Your repo is now a clean, realistic reference for interviews and projects.
-
----
-
-## Attribution
-
-This README was authored to be original and practical while capturing the teaching goals of your slides on Python operators, precedence, type casting, `input()`, and `eval()`. The examples and wording are newly written to avoid duplication.
+## Next Lesson - 3
