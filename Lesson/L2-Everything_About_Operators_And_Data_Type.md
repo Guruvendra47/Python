@@ -1,4 +1,4 @@
-# Python: Operators, Type Casting, `input()`, and `eval()` — From Slides to GitHub
+# Python: Operators, Type Casting, `input()`, and `eval()`
 
 A practical, hands-on guide that turns your presentation into a GitHub-friendly reference with examples you can copy‑paste and run. Everything is written in clear language and grounded in realistic, business‑style scenarios.
 
