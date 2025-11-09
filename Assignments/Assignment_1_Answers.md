@@ -1,23 +1,8 @@
 # Python Fundamentals — Assignment 1
 
-## Table of Contents
-- [Q1 — Basic: Variable Assignment](#q1---basic-variable-assignment)
-- [Q2 — Data Types Identification (Short answers)](#q2---data-types-identification-short-answers)
-- [Q3 — Keywords Check](#q3---keywords-check)
-- [Q4 — Literals Classification](#q4---literals-classification)
-- [Q5 — Type Casting Basics](#q5---type-casting-basics)
-- [Q6 — Mixed Types Arithmetic](#q6---mixed-types-arithmetic)
-- [Q7 — Temperature Converter](#q7---temperature-converter)
-- [Q8 — Variables & Mutability](#q8---variables--mutability)
-- [Q9 — Input Validation (type casting + condition)](#q9---input-validation-type-casting--condition)
-- [Q10 — Keywords & Identifiers](#q10---keywords--identifiers)
-- [Q11 — Advanced: Expression Parser](#q11---advanced-expression-parser)
 
----
 
-## Q1 — Basic: Variable Assignment
-
-**Question.** Assign values to variables (`age`, `name`, `is_student`, `gpa`, `courses`) and print their types using `type()`.
+## Q1 —  Assign values to variables (`age`, `name`, `is_student`, `gpa`, `courses`) and print their types using `type()`.
 
 **Explanation.** Python variables are dynamically typed. Use `type()` to inspect the runtime type. Good practice: choose realistic example values.
 
@@ -48,9 +33,7 @@ courses: ['CS101', 'MA101', 'ENG201'] type: <class 'list'>
 
 ---
 
-## Q2 — Data Types Identification (Short answers)
-
-**Question.** For each Python literal, state its data type: `100`, `3.14`, `'c'`, `'Hello'`, `True`, `None`, `(1,2,3)`, `{'a':1}`.
+## Q2 — For each Python literal, state its data type: `100`, `3.14`, `'c'`, `'Hello'`, `True`, `None`, `(1,2,3)`, `{'a':1}`.
 
 **Explanation.** Identify built-in literal types: integers, floats, strings, booleans, NoneType, tuples, dictionaries.
 
@@ -85,9 +68,7 @@ None -> <class 'NoneType'>
 
 ---
 
-## Q3 — Keywords Check
-
-**Question.** Import the `keyword` module and write a program that checks if a word is a Python keyword.
+## Q3 — Import the `keyword` module and write a program that checks if a word is a Python keyword.
 
 **Explanation.** Python `keyword` module exposes a list and a helper `iskeyword()` to test a string. Useful for validating identifiers.
 
@@ -120,9 +101,7 @@ True is keyword? False
 
 ---
 
-## Q4 — Literals Classification
-
-**Question.** Given a literal as string input, classify it as Integer, Float, String, Boolean, None, or Other.
+## Q4 — Given a literal as string input, classify it as Integer, Float, String, Boolean, None, or Other.
 
 **Explanation.** The input is a string; we must attempt to parse it. Use a sequence of checks: `None`, boolean literals, integer parse, float parse, else treat as string/other. Always handle exceptions.
 
@@ -174,9 +153,7 @@ abc123 -> str/other
 
 ---
 
-## Q5 — Type Casting Basics
-
-**Question.** Demonstrate explicit casting between `int`, `float`, `str`, and `bool` with valid and invalid cases.
+## Q5 — Demonstrate explicit casting between `int`, `float`, `str`, and `bool` with valid and invalid cases.
 
 **Explanation.** Casting (conversion) functions: `int()`, `float()`, `str()`, `bool()`. Some conversions raise `ValueError` (e.g., `int("3.14")`), others succeed (e.g., `int(3.0)` → `3`). `bool()` follows truthiness rules.
 
@@ -221,9 +198,7 @@ bool from 'False' (non-empty string): True
 
 ---
 
-## Q6 — Mixed Types Arithmetic
-
-**Question.** Perform addition based on input type: numeric addition or string concatenation.
+## Q6 — Perform addition based on input type: numeric addition or string concatenation.
 
 **Explanation.** If both operands are numeric (int/float), perform numeric addition. If either is a pure string that cannot be parsed to number, perform concatenation. Avoid implicit errors by explicit checks and exception handling.
 
@@ -262,9 +237,7 @@ hello +  world -> hello world
 
 ---
 
-## Q7 — Temperature Converter
-
-**Question.** Convert between Celsius and Fahrenheit using user input and type conversion.
+## Q7 — Convert between Celsius and Fahrenheit using user input and type conversion.
 
 **Explanation.** Use standard formulas: `C = (F - 32) * 5/9`, `F = C * 9/5 + 32`. Validate numeric input and allow user to select direction.
 
@@ -292,9 +265,7 @@ print("100°C ->", c_to_f(100), "°F")
 
 ---
 
-## Q8 — Variables & Mutability
-
-**Question.** Explain mutable vs immutable with code showing list (mutable) and tuple (immutable) behavior.
+## Q8 — Explain mutable vs immutable with code showing list (mutable) and tuple (immutable) behavior.
 
 **Explanation.** Mutable objects can be changed in place (lists, dicts, sets). Immutable objects cannot be altered once created (ints, floats, strings, tuples). Understanding this affects function design and side-effects.
 
@@ -328,9 +299,7 @@ Trying to modify tuple resulted in: TypeError('...')
 
 ---
 
-## Q9 — Input Validation (type casting + condition)
-
-**Question.** Take age as input, validate numeric, and classify into Child, Teenager, Adult, or Senior.
+## Q9 — Take age as input, validate numeric, and classify into Child, Teenager, Adult, or Senior.
 
 **Explanation.** Validate using `int()` with exception handling. Accept only reasonable range (0–120). Use conditionals for classification.
 
@@ -370,9 +339,7 @@ abc -> Invalid input: not an integer
 
 ---
 
-## Q10 — Keywords & Identifiers
-
-**Question.** Explain valid Python identifiers and write code to check invalid ones or keywords.
+## Q10 — Explain valid Python identifiers and write code to check invalid ones or keywords.
 
 **Explanation.** Identifiers must start with a letter (A–Z, a–z) or underscore `_`, followed by letters, digits, or underscores. They cannot be a Python keyword or contain spaces or special characters.
 
@@ -409,9 +376,7 @@ def -> False is a Python keyword
 
 ---
 
-## Q11 — Advanced: Expression Parser
-
-**Question.** Accept simple expressions like `'12 * 3.5'` and evaluate using type casting and exception handling.
+## Q11 — Accept simple expressions like `'12 * 3.5'` and evaluate using type casting and exception handling.
 
 **Explanation.** Using `eval()` is dangerous if input is untrusted. We'll implement a safe parser that supports two operands and one operator from the allowed set `+ - * /`. This handles numeric literals (int/float) and avoids arbitrary code execution.
 
