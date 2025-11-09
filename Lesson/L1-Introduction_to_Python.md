@@ -45,6 +45,7 @@ To start coding in Python:
 4. Verify the installation:
    ```bash
    python --version
+   pip --version
    ```
 
 ### Using an IDE
