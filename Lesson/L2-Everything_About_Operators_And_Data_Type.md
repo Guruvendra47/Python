@@ -1,10 +1,5 @@
 # Python: Operators, Type Casting, `input()`, and `eval()`
 
-A practical, hands-on guide that turns your presentation into a GitHub-friendly reference with examples you can copy‑paste and run. Everything is written in clear language and grounded in realistic, business‑style scenarios.
-
-> **What this is:** A single `README.md` you can drop into a repo. It summarizes operators, precedence, type casting, the `input()` function, and `eval()`—with runnable examples and best practices for real projects.
-
----
 
 ## Table of Contents
 - [Why Operators Matter (Real Use Case)](#why-operators-matter-real-use-case)
