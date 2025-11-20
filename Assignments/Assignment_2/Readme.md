@@ -1,14 +1,14 @@
-# 🐍 **Python Assignment 2: Conditional Statements**
+#  **Python Assignment 2: Conditional Statements**
 
 
 
-## 🎯 **Objective**
+##  **Objective**
 
 To understand and apply Python conditional statements — **if**, **elif**, **else**, and **nested conditions** — through practical problems.
 
 
 
-## 📌 **Instructions**
+##  **Instructions**
 
 1. 📝 Write Python code for each question in a new cell or file.  
 2. 💬 Use proper comments to explain your logic.  
