@@ -1,400 +1,187 @@
 # Python Data Types
 
-## Project Overview
+## Overview
 
-This repository provides a comprehensive introduction to **Python Data Types**, one of the core concepts in Python programming. It explains how Python represents different kinds of data, how to identify data types, and how to convert values between different types using type casting.
+This repository introduces the fundamental data types available in Python. It covers integers, floating-point numbers, strings, and Boolean values, along with the use of the `type()` function and type casting between different data types.
 
-The repository includes practical examples demonstrating integers, floating-point numbers, strings, Booleans, and the `type()` function, helping learners build a solid foundation for Python programming.
-
-The objective of this repository is to understand Python's built-in data types and develop the ability to work with different forms of data efficiently.
+Understanding Python data types is essential for writing correct and efficient programs, as every value in Python belongs to a specific type.
 
 ---
 
-# Business Problem
+## Topics Covered
 
-Every Python application processes data in different formats such as numbers, text, and logical values. Understanding data types is essential because each type behaves differently and supports different operations.
+### Data Types
 
-Without a proper understanding of Python data types, developers may encounter unexpected errors, incorrect calculations, and inefficient code. Learning data types and type conversion enables developers to write accurate, reliable, and maintainable Python applications.
+The repository introduces Python's commonly used built-in data types:
 
----
-
-# Project Objectives
-
-The primary objectives of this repository are to:
-
-- Understand Python's built-in data types
-- Identify the data type of an object using the `type()` function
-- Differentiate between integers, floating-point numbers, strings, and Booleans
-- Perform type conversion (type casting)
-- Understand data representation in Python
-- Build a strong programming foundation for advanced Python concepts
+- Integer (`int`)
+- Float (`float`)
+- String (`str`)
+- Boolean (`bool`)
 
 ---
 
-# Topics Covered
-
-## Introduction to Python Data Types
-
-This repository introduces the concept of data types and explains how Python classifies different kinds of data.
+### Integer (`int`)
 
 Topics include:
 
-- What is a data type?
-- Why data types are important
-- Python's dynamic typing system
+- Positive integers
+- Negative integers
+- Whole numbers
+- Integer representation
 
----
-
-## Integer (`int`)
-
-Integers represent whole numbers without decimal values.
-
-Examples:
+Example:
 
 ```python
 10
 -25
-1000
-0
+100
 ```
-
-Topics covered:
-
-- Positive integers
-- Negative integers
-- Integer representation
-- Integer range
 
 ---
 
-## Float (`float`)
+### Float (`float`)
 
-Floating-point numbers represent real numbers containing decimal values.
+Topics include:
 
-Examples:
+- Decimal numbers
+- Real numbers
+- Floating-point values
+
+Example:
 
 ```python
 3.14
-10.5
-0.25
--7.89
+15.75
+-2.5
 ```
-
-Topics covered:
-
-- Decimal numbers
-- Precision
-- Real number representation
 
 ---
 
-## String (`str`)
+### String (`str`)
 
-Strings are ordered sequences of characters used to represent text.
+Topics include:
 
-Examples:
+- Character sequences
+- Single quotes
+- Double quotes
+- Text representation
+
+Example:
 
 ```python
 "Python"
-'Data Engineering'
-"123"
+'IBM'
 ```
-
-Topics covered:
-
-- Creating strings
-- Character sequences
-- Text representation
 
 ---
 
-## Boolean (`bool`)
+### Boolean (`bool`)
 
-Boolean values represent logical outcomes.
+Topics include:
 
-Possible values:
+- True
+- False
+- Logical values
+
+Example:
 
 ```python
 True
 False
 ```
 
-Topics covered:
-
-- Boolean values
-- Logical representation
-- Boolean operations
-
 ---
 
-## Identifying Data Types
+### Identifying Data Types
 
-Python provides the built-in `type()` function to determine the data type of an object.
+Using the built-in `type()` function to determine the type of an object.
 
 Example:
 
 ```python
-x = 100
-print(type(x))
-```
-
-Output:
-
-```python
-<class 'int'>
+type(100)
+type(3.14)
+type("Python")
+type(True)
 ```
 
 ---
 
-## Type Casting
+### Type Casting
 
-The repository demonstrates converting values from one data type to another.
+Converting one data type into another.
 
-Supported conversions include:
+Conversions covered:
 
 - Integer to Float
 - Float to Integer
+- String to Integer
 - Integer to String
 - Float to String
-- String to Integer
 - Integer to Boolean
-- Float to Boolean
 - Boolean to Integer
 - Boolean to Float
 
 ---
 
-## Integer to Float
+### Boolean Conversion
 
-Example:
-
-```python
-int_value = 2
-float_value = float(int_value)
-
-print(float_value)
-```
-
-Output:
-
-```
-2.0
-```
-
----
-
-## Float to Integer
-
-Example:
-
-```python
-number = 1.9
-integer = int(number)
-```
-
-Output:
-
-```
-1
-```
-
-**Note:** The decimal portion is discarded during conversion.
-
----
-
-## String to Integer
-
-Example:
-
-```python
-value = "100"
-number = int(value)
-```
-
-If the string does not contain a valid integer, Python raises an exception.
-
-Example:
-
-```python
-int("Python")
-```
-
-Result:
-
-```
-ValueError
-```
-
----
-
-## Numeric to String
-
-Examples:
-
-```python
-str(100)
-
-str(15.5)
-```
-
-These conversions are useful when displaying numbers as text.
-
----
-
-## Boolean Conversion
-
-Python allows conversion between numeric values and Boolean values.
-
-Examples:
+Examples include:
 
 ```python
 bool(1)
-```
 
-Output:
-
-```python
-True
-```
-
-```python
 bool(0)
-```
 
-Output:
-
-```python
-False
-```
-
-Similarly,
-
-```python
 int(True)
-```
 
-Output:
-
-```
-1
-```
-
-```python
 int(False)
-```
-
-Output:
-
-```
-0
 ```
 
 ---
 
-# Repository Structure
+## Examples Included
 
-```
+- Working with different data types
+- Identifying object types
+- Converting between data types
+- Boolean conversions
+- Handling invalid conversions
+
+---
+
+## Skills Learned
+
+- Understanding Python data types
+- Using the `type()` function
+- Performing type casting
+- Working with numeric and text data
+- Using Boolean values in Python
+
+---
+
+## Technologies Used
+
+- Python 3
+- Jupyter Notebook
+
+---
+
+## Repository Structure
+
+```text
 Python-Data-Types/
 │
-├── Introduction to Data Types
-├── Integer Data Type
-├── Float Data Type
-├── String Data Type
-├── Boolean Data Type
-├── Type Identification
-├── Type Casting
-├── Practical Examples
-│
+├── notebooks/
+├── examples/
 └── README.md
 ```
 
 ---
 
-# Technologies Used
-
-| Category | Technology |
-|-----------|------------|
-| Programming Language | Python 3 |
-| Development Environment | Jupyter Notebook |
-| Concepts | Python Data Types |
-
----
-
-# Key Concepts
-
-The repository demonstrates:
-
-- Built-in Python data types
-- Data representation
-- Type checking
-- Type conversion
-- Numeric data handling
-- Text data representation
-- Boolean logic
-- Safe type casting practices
-
----
-
-# Skills Demonstrated
-
-This project demonstrates proficiency in:
-
-- Python Fundamentals
-- Data Types
-- Type Casting
-- Data Conversion
-- Boolean Logic
-- Problem Solving
-- Basic Python Programming
-
----
-
-# Learning Outcomes
-
-After completing this repository, learners will be able to:
-
-- Understand Python's built-in data types
-- Identify object types using the `type()` function
-- Convert values between different data types
-- Work confidently with integers, floats, strings, and Booleans
-- Recognize common type conversion errors
-- Apply data type concepts in real-world Python programs
-
----
-
-# Applications
-
-The concepts covered in this repository are applicable to:
-
-- Software Development
-- Data Engineering
-- Data Analysis
-- Automation
-- Machine Learning
-- Web Development
-- Scripting
-- Scientific Computing
-
----
-
-# Future Enhancements
-
-Future repositories will expand on these concepts by covering:
-
-- Variables
-- Operators
-- Expressions
-- Conditional Statements
-- Loops
-- Functions
-- Collections (Lists, Tuples, Sets, Dictionaries)
-- Object-Oriented Programming
-- Exception Handling
-
----
-
-# Author
+## Author
 
 **Guruvendra Singh**
 
-Data Engineering | Python | SQL | Snowflake | AWS | ETL | Automation
+Data Engineering | Python | SQL | Snowflake | AWS
