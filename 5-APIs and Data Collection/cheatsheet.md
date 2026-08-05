@@ -1,5 +1,3 @@
----
-
 # Cheat Sheet
 
 ## Import Libraries
@@ -10,7 +8,6 @@ import pandas as pd
 from bs4 import BeautifulSoup
 ```
 
----
 
 ## GET Request
 
