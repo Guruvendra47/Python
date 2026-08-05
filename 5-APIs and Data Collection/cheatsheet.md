@@ -1,177 +1,317 @@
-# Python APIs & Web Scraping Cheat Sheet
-
-## Overview
-
-This repository contains a quick reference for **Python APIs, HTTP Requests, Requests Library, and Beautiful Soup**. It summarizes commonly used methods, syntax, and examples for working with REST APIs and extracting data from web pages.
-
-This cheat sheet is useful for learning API integration, web scraping, and HTML parsing in Python.
-
 ---
 
-## Topics Covered
+# Cheat Sheet
 
-### Requests Library
+## Import Libraries
 
-Topics include:
-
-- GET requests
-- POST requests
-- PUT requests
-- DELETE requests
-- HTTP headers
-- Query parameters
-- Status codes
-- JSON responses
-
----
-
-### HTTP Requests
-
-Common HTTP methods:
-
-| Method | Description |
-|---------|-------------|
-| `GET` | Retrieve data |
-| `POST` | Create new resources |
-| `PUT` | Update existing resources |
-| `DELETE` | Remove resources |
-
----
-
-### Request Components
-
-Topics include:
-
-- Headers
-- Query Parameters
-- Response Status Codes
-- JSON Responses
-
----
-
-### Beautiful Soup
-
-Beautiful Soup is a Python library used for parsing HTML and XML documents.
-
-Topics include:
-
-- Creating Beautiful Soup objects
-- HTML parsing
-- DOM navigation
-- Extracting HTML elements
-
----
-
-### HTML Element Search
-
-Methods covered:
-
-- `find()`
-- `find_all()`
-- `findChildren()`
-- `select()`
-
----
-
-### HTML Navigation
-
-Topics include:
-
-- Parent elements
-- Child elements
-- Next sibling
-- Element attributes
-- Text extraction
-
----
-
-### Common HTML Tags
-
-Frequently used tags:
-
-- `<a>`
-- `<p>`
-- `<h1>` to `<h6>`
-- `<table>`
-- `<tr>`
-- `<td>`
-- `<th>`
-- `<img>`
-- `<form>`
-- `<button>`
-
----
-
-### JSON Processing
-
-Topics include:
-
-- Parsing API responses
-- Working with JSON data
-- Converting responses into Python objects
-
----
-
-## Examples Included
-
-- Sending GET requests
-- Sending POST requests
-- Updating resources using PUT
-- Deleting resources using DELETE
-- Using HTTP headers
-- Passing query parameters
-- Parsing JSON responses
-- Parsing HTML using Beautiful Soup
-- Finding HTML elements
-- Selecting elements with CSS selectors
-- Navigating the HTML tree
-- Extracting text and attributes
-
----
-
-## Skills Learned
-
-- Working with REST APIs
-- Using the Requests library
-- Handling HTTP responses
-- Processing JSON data
-- Parsing HTML documents
-- Web scraping using Beautiful Soup
-- Navigating HTML elements
-- Extracting structured web data
-
----
-
-## Technologies Used
-
-- Python 3
-- Requests
-- Beautiful Soup (bs4)
-- HTML
-- JSON
-- Jupyter Notebook
-
----
-
-## Repository Structure
-
-```text
-Python-APIs-Web-Scraping-Cheat-Sheet/
-│
-├── Requests Library
-├── HTTP Methods
-├── Beautiful Soup
-├── HTML Parsing
-├── JSON Processing
-├── Cheat Sheet
-├── Practice Examples
-└── README.md
+```python
+import requests
+import pandas as pd
+from bs4 import BeautifulSoup
 ```
 
 ---
 
-## Author
+## GET Request
 
-**Guruvendra Singh**
+Retrieve data from an API.
 
-Data Engineering | Python | SQL | Snowflake | AWS
+```python
+response = requests.get(url)
+```
+
+Example
+
+```python
+response = requests.get("https://api.example.com/data")
+```
+
+---
+
+## POST Request
+
+Send data to the server.
+
+```python
+response = requests.post(url, data=data)
+```
+
+Example
+
+```python
+payload = {"name": "Guru"}
+
+response = requests.post(
+    "https://api.example.com/submit",
+    data=payload
+)
+```
+
+---
+
+## PUT Request
+
+Update existing data.
+
+```python
+response = requests.put(url, data=data)
+```
+
+Example
+
+```python
+response = requests.put(
+    "https://api.example.com/update",
+    data={"id":1}
+)
+```
+
+---
+
+## DELETE Request
+
+Delete a resource.
+
+```python
+response = requests.delete(url)
+```
+
+Example
+
+```python
+response = requests.delete(
+    "https://api.example.com/delete"
+)
+```
+
+---
+
+## Query Parameters
+
+```python
+params = {
+    "page":1,
+    "per_page":10
+}
+
+response = requests.get(url, params=params)
+```
+
+---
+
+## Custom Headers
+
+```python
+headers = {
+    "Authorization":"Bearer TOKEN"
+}
+
+response = requests.get(
+    url,
+    headers=headers
+)
+```
+
+---
+
+## Response Status Code
+
+```python
+response.status_code
+```
+
+---
+
+## JSON Response
+
+```python
+data = response.json()
+```
+
+---
+
+## BeautifulSoup
+
+Create a BeautifulSoup object.
+
+```python
+soup = BeautifulSoup(
+    html,
+    "html.parser"
+)
+```
+
+---
+
+## Find First Element
+
+```python
+element = soup.find(
+    "a",
+    class_="link"
+)
+```
+
+---
+
+## Find All Elements
+
+```python
+elements = soup.find_all(
+    "a"
+)
+```
+
+---
+
+## CSS Selector
+
+```python
+titles = soup.select("h1")
+```
+
+---
+
+## Parent Element
+
+```python
+parent = element.parent
+```
+
+---
+
+## Next Sibling
+
+```python
+next_element = element.find_next_sibling()
+```
+
+---
+
+## Child Elements
+
+```python
+children = element.findChildren()
+```
+
+---
+
+## Get Text
+
+```python
+text = element.text
+```
+
+---
+
+## Get Attribute
+
+```python
+href = element["href"]
+```
+
+---
+
+## Common HTML Tags
+
+| Tag | Purpose |
+|------|----------|
+| `<a>` | Hyperlink |
+| `<p>` | Paragraph |
+| `<h1>`-`<h6>` | Headings |
+| `<table>` | Table |
+| `<tr>` | Table Row |
+| `<td>` | Table Cell |
+| `<th>` | Table Header |
+| `<img>` | Image |
+| `<form>` | Form |
+| `<button>` | Button |
+
+---
+
+## Pandas Read HTML Table
+
+```python
+tables = pd.read_html(url)
+
+df = tables[0]
+```
+
+---
+
+## Read CSV
+
+```python
+df = pd.read_csv("data.csv")
+```
+
+---
+
+## Read Excel
+
+```python
+df = pd.read_excel("data.xlsx")
+```
+
+---
+
+## Save CSV
+
+```python
+df.to_csv(
+    "output.csv",
+    index=False
+)
+```
+
+---
+
+## Time Series
+
+```python
+df["date"] = pd.to_datetime(
+    df["timestamp"],
+    unit="ms"
+)
+```
+
+---
+
+## DataFrame Methods
+
+```python
+df.head()
+
+df.mean()
+
+df.info()
+
+df.describe()
+
+df.tail()
+```
+
+---
+
+## HTTP Methods Summary
+
+| Method | Description |
+|---------|-------------|
+| GET | Retrieve Data |
+| POST | Create Data |
+| PUT | Update Data |
+| DELETE | Delete Data |
+
+---
+
+## HTTP Status Codes
+
+| Code | Meaning |
+|------|---------|
+| 100 | Informational |
+| 200 | Success |
+| 201 | Created |
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 404 | Not Found |
+| 500 | Server Error |
