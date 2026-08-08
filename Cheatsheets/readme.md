@@ -1,95 +1,54 @@
 # Python Cheat Sheets
 
-A collection of Python cheat sheets created while completing the **IBM Python for Data Science, AI & Development** course.
+A collection of Python cheat sheets designed as a quick reference for commonly used syntax, methods, functions, and libraries.
 
-These notes serve as a quick reference for Python programming, data manipulation, APIs, and web scraping concepts.
-
----
-
-## 📂 Contents
-
-- **Python Basics**
-  - Variables
-  - Data Types
-  - Operators
-  - Strings
-  - Comments
-
-- **Lists & Tuples**
-  - Creating Lists & Tuples
-  - Indexing & Slicing
-  - List Methods
-  - Tuple Functions
-
-- **Dictionaries & Sets**
-  - Dictionary Operations
-  - Set Operations
-  - Common Methods
-
-- **Python Programming Fundamentals**
-  - Conditions
-  - Loops
-  - Functions
-  - Classes & Objects
-  - Exception Handling
-
-- **Working with Data**
-  - File Handling
-  - Pandas
-  - NumPy
-  - DataFrames
-  - Data Cleaning
-
-- **APIs & Data Collection**
-  - REST APIs
-  - HTTP Methods
-  - Requests Library
-  - JSON
-  - Query Parameters
-
-- **Web Scraping**
-  - HTML Basics
-  - BeautifulSoup
-  - Finding Elements
-  - HTML Tables
-  - Extracting Data
+These notes cover core Python concepts, data structures, file handling, data analysis, APIs, and web scraping to help with learning, coding, and interview preparation.
 
 ---
 
-## 📚 Topics Covered
+## 📚 Cheat Sheets
 
-- Python Fundamentals
-- Data Structures
-- Object-Oriented Programming (OOP)
-- File Handling
+- Python Basics
+- Lists & Tuples
+- Dictionaries & Sets
+- Python Programming Fundamentals
+- Working with Data in Python
+- APIs & Data Collection
+
+---
+
+## 📖 Topics Covered
+
+- Variables & Data Types
+- Strings
+- Operators
+- Lists
+- Tuples
+- Dictionaries
+- Sets
+- Conditional Statements
+- Loops
+- Functions
+- Classes & Objects
 - Exception Handling
+- File Handling
 - NumPy
 - Pandas
+- DataFrames
+- Reading & Writing Files
 - REST APIs
-- HTTP Protocol
+- HTTP Methods
 - Requests Library
+- JSON
+- HTML Basics
 - BeautifulSoup
-- HTML
 - Web Scraping
-- Data Collection
 
 ---
 
-## 🎯 Purpose
+## 🛠 Libraries
 
-These cheat sheets were created for:
-
-- Quick revision
-- Interview preparation
-- Daily Python reference
-- GitHub portfolio
-- Learning and practice
-
----
-
-## 🛠 Technologies
-
-- Python
+- Python Standard Library
 - NumPy
 - Pandas
 - Requests
@@ -97,10 +56,16 @@ These cheat sheets were created for:
 
 ---
 
-## 📌 Note
+## 🎯 Purpose
 
-These notes are intended as a concise reference and do not replace the official documentation. They summarize the most commonly used syntax, methods, and concepts covered throughout the course.
+These cheat sheets are intended to serve as a quick reference for:
+
+- Learning Python
+- Daily coding
+- Revision
+- Interview preparation
+- Solving programming problems
 
 ---
 
-⭐ If you find these cheat sheets useful, consider starring the repository.
+⭐ Feel free to use these cheat sheets as a quick reference while coding or learning Python.
